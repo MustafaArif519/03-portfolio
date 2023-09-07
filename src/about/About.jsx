@@ -163,11 +163,13 @@ export default function About() {
         <MDBCardTitle> <h3 style={{ fontWeight: 'bold' }}>~$whoami (Who I Am)</h3> </MDBCardTitle>
         <br />
         <MDBCardText>
-          My name is Mustafa Arif and I am currently a bacehlors student majoring in computer
-          science at the University of Michigan set to graduate December 2023. As a software engineer
-          I have experience in full stack development, distributed systems, and embedded systems.
-          I am also currently taking courses in developing operating systems and machine learning this
-          semester. 
+          My name is Mustafa Arif and I am currently a bachelors student majoring in computer
+          science at the University of Michigan Ann Arbor set to graduate December 2023. As a 
+          software engineer
+          I have experience in machine learning algorithms, distributed systems, and embedded systems.
+          I am also currently doing contract work for web projects ranging from frontend 
+          portfolio websites to scalable full stack solutions for businesses.
+          This semester, I'm expanding my knowledge by studying operating systems.
           If you happen to be a recruiter and stumble accross my website, feel free to send me 
           an email! :D
 

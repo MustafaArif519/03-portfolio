@@ -35,16 +35,16 @@ function App() {
         </div>
 
         <div>
-          <a href='https://www.facebook.com/Faridas-Cake-Boutique-101880002352320'
-          target="_blank" rel="noopener noreferrer"
-           className='me-4 text-reset' >
-          <MDBIcon fab icon="linkedin fa-lg" style={{ color: '#3b5998' }} />
-          </a>
-          
-          <a href="https://www.instagram.com/faridascakeboutique/" 
-          className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
-            <MDBIcon fab icon="github fa-lg" style={{ color: '#ac2bac' }} />
-          </a>
+        <a href='https://www.linkedin.com/in/mustafa-arif-9a46a0239/'
+                      target="_blank" rel="noopener noreferrer"
+                      className='me-4 text-reset' >
+                      <MDBIcon fab icon="linkedin" size='2x' style={{ color: '#3b5998' }} />
+                    </a>
+
+                    <a href="https://github.com/MustafaArif519"
+                      className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
+                      <MDBIcon fab icon="github" size='2x' style={{ color: '#3b5998' }} />
+                    </a>
 
           
         </div>
