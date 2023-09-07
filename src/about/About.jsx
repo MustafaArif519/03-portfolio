@@ -160,7 +160,7 @@ export default function About() {
           
           </MDBCardHeader>
       <MDBCardBody>
-        <MDBCardTitle> <h3>~$whoami (Who I Am)</h3> </MDBCardTitle>
+        <MDBCardTitle> <h3 style={{ fontWeight: 'bold' }}>~$whoami (Who I Am)</h3> </MDBCardTitle>
         <br />
         <MDBCardText>
           My name is Mustafa Arif and I am currently a bacehlors student majoring in computer

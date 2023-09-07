@@ -23,7 +23,7 @@ const Wikipedia = () => {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle style={{height: "70px"}}><h3>Wikipedia Search Pipeline</h3></MDBCardTitle>
+        <MDBCardTitle style={{height: "70px"}}><h3 style={{ fontWeight: 'bold' }}>Wikipedia Search Pipeline</h3></MDBCardTitle>
         <MDBCardText>
           Map-Reduce style Pipeline that calculates tf-idf score for every word per document from 
           a series of real wikipedia articles. Results of pipeline are then used by a REST API

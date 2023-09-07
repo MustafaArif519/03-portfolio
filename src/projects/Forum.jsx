@@ -23,7 +23,7 @@ const Forum = () => {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle style={{height: "70px"}}><h3>Forum Backend</h3></MDBCardTitle>
+        <MDBCardTitle style={{height: "70px"}}><h3 style={{ fontWeight: 'bold' }}>Forum Backend</h3></MDBCardTitle>
         <MDBCardText>
           Open source project to create a deployable forum backend for a frontend application.
           Created using Django framework and supports sign in through social accounts such as Google and 

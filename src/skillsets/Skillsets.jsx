@@ -216,9 +216,9 @@ export default function Skillsets() {
               </MDBRow>
               <MDBRow>
                 <MDBCol sm="5">
-                  <MDBCardText>
-                  <strong>Programming Languages:
-                  </strong>
+                  <MDBCardText style={{ fontWeight: 'bold' }}>
+                  Programming Languages:
+                  
                   </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">
@@ -230,9 +230,9 @@ export default function Skillsets() {
               <hr />
               <MDBRow>
                 <MDBCol sm="5">
-                  <MDBCardText>
-                  <strong>Libraries:
-                  </strong>
+                  <MDBCardText style={{ fontWeight: 'bold' }}>
+                  Libraries:
+                  
                   </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">
@@ -244,9 +244,9 @@ export default function Skillsets() {
               <hr />
               <MDBRow>
                 <MDBCol sm="5">
-                  <MDBCardText>
-                  <strong>Frameworks:
-                  </strong>
+                  <MDBCardText style={{ fontWeight: 'bold' }}>
+                  Frameworks:
+                  
                   </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">
@@ -258,9 +258,9 @@ export default function Skillsets() {
               <hr />
               <MDBRow>
                 <MDBCol sm="5">
-                  <MDBCardText><strong>
+                  <MDBCardText style={{ fontWeight: 'bold' }}>
                     Technologies:
-                    </strong></MDBCardText>
+                    </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">
                   <MDBCardText className="text-muted">
@@ -271,9 +271,9 @@ export default function Skillsets() {
               <hr />
               <MDBRow>
                 <MDBCol sm="5">
-                  <MDBCardText>
-                  <strong>Hobbies:
-                  </strong>
+                  <MDBCardText style={{ fontWeight: 'bold' }}>
+                  Hobbies:
+                  
                   </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">

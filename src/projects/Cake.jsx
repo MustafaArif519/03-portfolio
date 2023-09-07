@@ -23,7 +23,7 @@ const Cake = () => {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle style={{height: "70px"}}><h3>Cake Boutique Website</h3></MDBCardTitle>
+        <MDBCardTitle style={{height: "70px"}}><h3 style={{ fontWeight: 'bold' }}>Cake Boutique Website</h3></MDBCardTitle>
         <MDBCardText>
           Contract work involving a full-stack project for a local bakery. The backend was developed
           using Django framework in Python and deployed to AWS Elastic Beanstalk. The frontend was 

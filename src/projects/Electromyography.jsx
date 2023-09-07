@@ -23,7 +23,7 @@ const Electromyography = () => {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle style={{height: "70px"}}><h3>Electromyography Arduino/Python</h3></MDBCardTitle>
+        <MDBCardTitle style={{height: "70px"}}><h3 style={{ fontWeight: 'bold' }}>Electromyography Arduino/Python</h3></MDBCardTitle>
         <MDBCardText>
           Open source project to convert electrical signals measured from EMG sensor in patient's residual
           limb and covert to mechanical movement in prosthetic arm. Movements determined by threshold

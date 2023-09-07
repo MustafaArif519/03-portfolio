@@ -32,7 +32,7 @@ export default function  Contract () {
     <>
     <MDBContainer className="py-5" style = {textStyle}>
     <h2 style={{height:"100px", textAlign: "center", color:"#FFFFFF"}}>
-      <div style = {textStyle}>
+      <div style = {textStyle} >
         <span >Web solutions that are </span>
         <TypeAnimation 
       sequence={[
@@ -71,7 +71,7 @@ export default function  Contract () {
         <MDBCardText>
           <h3>
           Impressed with what you see? Contact me for contract work using: 
-          <strong> mustaf@umich.edu</strong>
+          <p style={{ fontWeight: 'bold' }}> mustaf@umich.edu</p>
           <br />
           <br />
           <p>Looking forward to hearing from you!</p>
