@@ -29,7 +29,7 @@ export default function About() {
 
   const downloadResume = () => {
   // Replace 'pdf-sample.pdf' with the actual URL of your PDF file
-  const pdfUrl = 'images/Arif_Resume.pdf';
+  const pdfUrl = 'images/Arif_Resume_2023.pdf';
 
   // Create an anchor element
   const anchor = document.createElement('a');

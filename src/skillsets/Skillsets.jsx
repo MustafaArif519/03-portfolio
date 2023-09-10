@@ -276,7 +276,11 @@ const handleSearch2InputChange = event => {
 };
 
 
-  
+const headingStyle = {
+  textAlign: 'center',
+  whiteSpace: 'normal', // Change to 'nowrap' or 'break-spaces' for wrapping
+ 
+};
 
   return (
     <>
@@ -284,7 +288,9 @@ const handleSearch2InputChange = event => {
         <MDBRow>
         <MDBCol lg="8">
           <MDBCard className="mb-5 p-3">
-            <h1 className="d-flex align-items-center justify-content-center">Languages/Technology</h1>
+          <h1 style={headingStyle}>
+      Languages/Technology
+    </h1>
             <MDBCardBody>
               <MDBRow className="mb-4">
                 <div className="d-flex align-items-center justify-content-center">

@@ -49,7 +49,8 @@ export default function Navigation() {
                 <MDBContainer fluid>
 
                     <MDBNavbarBrand>
-                        <Nav.Link as={Link} to={`/`} style={logo}>
+                        <Nav.Link onClick = {() => setShowNavNoToggler(false)} 
+                        as={Link} to={`/`} style={logo}>
                         &#123;M&#125;
                         </Nav.Link>
                     </MDBNavbarBrand>
@@ -70,7 +71,8 @@ export default function Navigation() {
                         <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
                             <MDBNavbarItem className='active'>
 
-                                <Nav.Link as={Link} to={`/`}>&lt;About /&gt;</Nav.Link>
+                                <Nav.Link onClick = {() => setShowNavNoToggler(!showNavNoToggler)} 
+                                as={Link} to={`/`}>&lt;About /&gt;</Nav.Link>
 
                             </MDBNavbarItem>
                             {/* <MDBNavbarItem>
@@ -81,16 +83,19 @@ export default function Navigation() {
                             
 
                             <MDBNavbarItem>
-                                <Nav.Link as={Link} to={`/skillsets`}>&lt;Skillsets /&gt;</Nav.Link>
+                                <Nav.Link onClick = {() => setShowNavNoToggler(!showNavNoToggler)} 
+                                as={Link} to={`/skillsets`}>&lt;Skillsets /&gt;</Nav.Link>
                             </MDBNavbarItem>
 
                             <MDBNavbarItem>
-                                <Nav.Link as={Link} to={`/projects`}>&lt;Projects /&gt;</Nav.Link>
+                                <Nav.Link onClick = {() => setShowNavNoToggler(!showNavNoToggler)} 
+                                as={Link} to={`/projects`}>&lt;Projects /&gt;</Nav.Link>
                             </MDBNavbarItem>
 
 
                             <MDBNavbarItem>
-                                <Nav.Link as={Link} to={`/contract`}>&lt;Contract Work /&gt;</Nav.Link>
+                                <Nav.Link onClick = {() => setShowNavNoToggler(!showNavNoToggler)} 
+                                as={Link} to={`/contract`}>&lt;Contract Work /&gt;</Nav.Link>
                             </MDBNavbarItem>
 
                         </MDBNavbarNav>
