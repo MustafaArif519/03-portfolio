@@ -1,10 +1,13 @@
-import { useEffect, useCallback, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate  } from 'react-router-dom';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { useCallback } from "react";
+
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+
 import './App.css'
 import Skillsets from './skillsets/Skillsets'
 import Contract from './contract/Contract'
-import Home from './home/Home'
 import ErrorPage from './ErrorPage'
 import About from './about/About'
 import Navigation from './Navigation';
@@ -14,11 +17,13 @@ import Projects from './projects/Projects'
 function App() {
 
 
+
   return (
     <>
-        <Router >
-          <Navigation />
-          
+
+<Router >
+<Navigation />
+         
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/contract" element={<Contract  />} />

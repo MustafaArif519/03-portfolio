@@ -107,6 +107,43 @@ export default function Skillsets() {
 
   ];
 
+  const coursework = [
+    {
+      name: "EECS 280: Programming and Data Structures",
+    },
+    {
+      name: "EECS 203: Discrete Math",
+    },
+    {
+      name: "EECS 281: Data Structures and Algorithms",
+    },
+    {
+      name: "EECS 370: Introduction to Computer Organization",
+    },
+    {
+      name: "EECS 376: Foundations of Computer Science",
+    },
+    {
+      name: "EECS 485: Web Systems",
+    },
+    {
+      name: "EECS 493: User Interface Development",
+    },
+    {
+      name: "MATH 214: Linear Algebra",
+    },
+    {
+      name: "EECS 445: Introduction to Machine Learning",
+    },
+    {
+      name: "EECS 482: Introduction to Operating Systems",
+    },
+    {
+      name: "EECS 497: Human Centered Software Development",
+    },
+
+  ];
+
   const technologies = [
     {
       name: "Vite",
@@ -157,6 +194,8 @@ export default function Skillsets() {
   const [searchQuery, setSearchQuery] = useState('');
 
 
+
+
     // Step 3: Filter items based on the search query
     function extractNamesAsText(items) {
       // Check if the input is an array and is not empty
@@ -192,12 +231,60 @@ export default function Skillsets() {
     setSearchQuery(event.target.value);
   };
 
+
+  const [secondSearchQuery, setSecondSearchQuery] = useState('');
+
+   // Step 3: Filter items based on the search query
+   function extract2NamesAsText(items) {
+    // Check if the input is an array and is not empty
+    if (!Array.isArray(items) || items.length === 0) {
+      return 'No items to extract';
+    }
+
+    // Step 3: Filter items based on the search query
+    const filteredItems = secondSearchQuery
+      ? items.filter(item =>
+          item.name
+            .toLowerCase()
+            .split(' ') // Split item name into words
+            .some(word =>
+              secondSearchQuery
+                .trim()
+                .toLowerCase()
+                .split(' ') // Split trimmed search query into words
+                .map(queryWord => queryWord.replace(/,$/, '')) // Remove commas at the end of query words
+                .some(secondSearchQuery => word.includes(secondSearchQuery))
+            )
+        )
+      : items;
+
+    // Use the map function to extract the "name" property from each filtered item
+    const names = filteredItems.map(item => item.name);
+
+    // Join the extracted names with commas and return as plain text
+    return (
+      <ul>
+        {names.map((name, index) => (
+          <li key={index}>{name}</li>
+        ))}
+      </ul>
+    );
+  }
+// Step 2: Add an event handler to update the search query state
+const handleSearch2InputChange = event => {
+  setSecondSearchQuery(event.target.value);
+};
+
+
+  
+
   return (
     <>
       <MDBContainer className="py-5" style = {textStyle}>
-        <MDBCol lg="12">
+        <MDBRow>
+        <MDBCol lg="8">
           <MDBCard className="mb-5 p-3">
-            <h1 className="d-flex align-items-center justify-content-center">Skillsets</h1>
+            <h1 className="d-flex align-items-center justify-content-center">Languages/Technology</h1>
             <MDBCardBody>
               <MDBRow className="mb-4">
                 <div className="d-flex align-items-center justify-content-center">
@@ -289,6 +376,34 @@ export default function Skillsets() {
             <MDBCol md="6"></MDBCol>
           </MDBRow>
         </MDBCol>
+        <MDBCol lg="4">
+          <MDBCard className="mb-5 p-3">
+            <h1 className="d-flex align-items-center justify-content-center">Coursework</h1>
+            <MDBCardBody>
+              <MDBRow className="mb-4">
+                <div className="d-flex align-items-center justify-content-center">
+                  {/* <MDBIcon icon="search" /> */}
+                  <input
+                    className="form-control form-control-sm ml-3"
+                    type="text"
+                    placeholder="ex: operating systems, machine learning etc..."
+                    aria-label="Search"
+                    // Step 2: Add an event handler for input changes
+                    onChange={handleSearch2InputChange}
+                    // Step 2: Set the input value to the searchQuery state
+                    value={secondSearchQuery}
+                  />
+                </div>
+              </MDBRow>
+              {extract2NamesAsText(coursework)}
+            </MDBCardBody>
+          </MDBCard>
+
+          <MDBRow>
+            <MDBCol md="6"></MDBCol>
+          </MDBRow>
+        </MDBCol>
+        </MDBRow>
       </MDBContainer>
     </>
   );
