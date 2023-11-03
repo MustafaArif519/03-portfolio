@@ -18,7 +18,7 @@ import {
   MDBListGroupItem
 } from 'mdb-react-ui-kit';
 
-export default function Skillsets() {
+export default function Tutoring () {
 
   const textStyle = {
     fontFamily: "Font Name, Courier",
@@ -286,7 +286,7 @@ const headingStyle = {
     <>
       <MDBContainer className="py-5" style = {textStyle}>
         <MDBRow>
-        <MDBCol lg="8">
+        <MDBCol lg="7">
           <MDBCard className="mb-5 p-3">
           <h1 style={headingStyle}>
       Languages/Technologies
@@ -382,9 +382,9 @@ const headingStyle = {
             <MDBCol md="6"></MDBCol>
           </MDBRow>
         </MDBCol>
-        <MDBCol lg="4">
+        <MDBCol lg="5">
           <MDBCard className="mb-5 p-3">
-            <h1 className="d-flex align-items-center justify-content-center">Coursework</h1>
+            <h1 className="d-flex align-items-center justify-content-center">High School Classes</h1>
             <MDBCardBody>
               <MDBRow className="mb-4">
                 <div className="d-flex align-items-center justify-content-center">

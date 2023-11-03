@@ -12,6 +12,7 @@ import ErrorPage from './ErrorPage'
 import About from './about/About'
 import Navigation from './Navigation';
 import Projects from './projects/Projects'
+import Tutoring from './tutoring/Tutoring';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path="/skillsets" element={<Skillsets  />} />
 
             <Route path="/projects" element={<Projects />} />
+            <Route path="/tutoring" element={<Tutoring />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Router>
