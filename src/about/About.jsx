@@ -189,9 +189,9 @@ export default function About() {
 
           </MDBRow>
 
-        </MDBContainer>
+         </MDBContainer>
 
-        <MDBContainer fluid className="py-5" style = {textStyle}>
+        {/*<MDBContainer fluid className="py-5" style = {textStyle}>
         <div className='p-5 text-center'>
         <h1 className='mb-3' style ={{color: "#FFCB05"}}>
           A Brief History of (My) Time:
@@ -295,7 +295,7 @@ export default function About() {
           </MDBCard>
         </div>
       </div>
-    </MDBContainer>
+    </MDBContainer> */}
       </section>
     </>
   );

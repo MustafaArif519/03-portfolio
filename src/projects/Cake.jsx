@@ -24,22 +24,28 @@ const Cake = () => {
       </MDBRipple>
       <MDBCardBody>
         <MDBCardTitle style={{height: "70px"}}><h3 style={{ fontWeight: 'bold' }}>Cake Boutique Website</h3></MDBCardTitle>
-        <MDBCardText>
-          Contract work involving a full-stack project for a local bakery. The backend was developed
-          using Django framework in Python and deployed to AWS Elastic Beanstalk. The frontend was 
-          deployed to firebase and the database was hosted on AWS Relational Database.
-        </MDBCardText>
+        <MDBCardText style={{ maxHeight: '150px', overflowY: 'auto' }}>
+  Contract work involving a full-stack project for a local bakery. The backend was developed
+  using Django framework in Python and deployed to AWS Elastic Beanstalk. The frontend was 
+  deployed to AWS Amplify.
+</MDBCardText>
+
 
         
  
       </MDBCardBody>
       <MDBCardFooter>
-        <MDBBtn color = "secondary" href = "https://github.com/MustafaArif519/cake/" target= "_blank">
-        <MDBIcon fab icon="github" size='2x' style={{ color: '#3b5998' }} />
-        </MDBBtn>
+  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <MDBBtn color="secondary" href="https://github.com/MustafaArif519/cake/" target="_blank">
+      <MDBIcon fab icon="github" size="2x" style={{ color: '#3b5998' }} />
+    </MDBBtn>
+    <MDBBtn color="secondary" href="https://www.faridascakeboutique.com/" target="_blank">
+    <MDBIcon fas icon="globe" size="2x" style={{ color: '#3b5998' }} />
+      
+    </MDBBtn>
+  </div>
+</MDBCardFooter>
 
-
-        </MDBCardFooter>
     </MDBCard>
       
       

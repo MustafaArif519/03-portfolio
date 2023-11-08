@@ -98,10 +98,10 @@ export default function Navigation() {
                                 as={Link} to={`/contract`}>&lt;Contract Work /&gt;</Nav.Link>
                             </MDBNavbarItem>
 
-                            <MDBNavbarItem>
+                            {/* <MDBNavbarItem>
                                 <Nav.Link style={{color: "#FFCB05"}} onClick = {() => setShowNavNoToggler(false)} 
                                 as={Link} to={`/tutoring`}>&lt;Tutoring /&gt;</Nav.Link>
-                            </MDBNavbarItem>
+                            </MDBNavbarItem> */}
 
                         </MDBNavbarNav>
 

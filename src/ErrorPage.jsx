@@ -33,8 +33,8 @@ export default function  ErrorPage () {
               </MDBCardTitle>
               <MDBCardText style={{ display: 'flex', justifyContent: 'center' }}>
                 <img
-                  style={{ width: '400px', height: '200px' }}
-                  src='https://toppng.com/free-image/error-404-looks-like-you-found-a-dead-link-PNG-free-PNG-Images_222899'
+                  style={{ maxWidth: '200px', maxHeight: '200px' }}
+                  src='images/error.png'
                   alt='Error 404'
                 />
               </MDBCardText>
