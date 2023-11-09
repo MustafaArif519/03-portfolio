@@ -22,7 +22,7 @@ import {
   MDBListGroupItem
 } from 'mdb-react-ui-kit';
 
-export default function About() {
+export default function About({theme}) {
   const textStyle = {
     fontFamily: "Font Name, Courier",
 
@@ -60,17 +60,25 @@ export default function About() {
     anchor.click();
   
     };
+
+
+    let textClass = "py-5 text-grey";
+
+    if(theme == "dark"){
+      textClass = "py-5 text-white";
+    }
+
   
   return (
     <>
       <section >
-        <MDBContainer className="py-5">
+        <MDBContainer className={textClass}>
 
 
-          <MDBRow>
-            <MDBCol lg="4">
-              <MDBCard className="mb-4">
-                <MDBCardBody className="text-center">
+          <MDBRow >
+            <MDBCol lg="4" >
+              <MDBCard className="mb-4" background={theme}>
+                <MDBCardBody className="text-center" >
                   <MDBCardImage
                     src="images/profile.jpg"
                     alt="avatar"
@@ -137,7 +145,7 @@ export default function About() {
             </MDBCol>
 
             <MDBCol lg ="8">
-            <MDBCard alignment='' style={textStyle}>
+            <MDBCard alignment='' style={textStyle} background={theme}>
       <MDBCardHeader style= {{minHeight:"130px", textStyle}}>
         
       <TypeAnimation
@@ -180,7 +188,7 @@ export default function About() {
 
 
       </MDBCardBody>
-      <MDBCardFooter className='text-muted'>
+      <MDBCardFooter className=''>
         <p>Check out my experience and projects under their respective tabs!</p>
         
       </MDBCardFooter>

@@ -28,10 +28,19 @@ import {
 
 } from 'mdb-react-ui-kit';
 
-export default function Navigation() {
+export default function Navigation({ toggleBackgroundAttribute, theme }) {
 
     const [showNavNoToggler, setShowNavNoToggler] = useState(false);
 
+    const buttonStyle = {
+        borderColor: '#ffcb05',
+        width: '40px', // Adjust the size as needed
+        height: '40px', // Adjust the size as needed
+
+        display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    };
     const logo = {
         fontFamily: "Font Name, Courier",
 
@@ -39,9 +48,9 @@ export default function Navigation() {
         paddingLeft: "10px",
         paddingRight: "10px",
 
-        color:"#FFCB05",
+        color: "#FFCB05",
 
-      };
+    };
 
     return (
         <>
@@ -49,13 +58,11 @@ export default function Navigation() {
                 <MDBContainer fluid>
 
                     <MDBNavbarBrand>
-                        <Nav.Link onClick = {() => setShowNavNoToggler(false)} 
-                        as={Link} to={`/`} style={logo}>
-                        &#123;M&#125;
+                        <Nav.Link onClick={() => setShowNavNoToggler(false)}
+                            as={Link} to={`/`} style={logo}>
+                            &#123;M&#125;
                         </Nav.Link>
                     </MDBNavbarBrand>
- 
-                    
 
                     <MDBNavbarToggler
                         type='button'
@@ -65,14 +72,14 @@ export default function Navigation() {
                         aria-label='Toggle navigation'
                         onClick={() => setShowNavNoToggler(!showNavNoToggler)}
                     >
-                        <MDBIcon icon='bars' fas />
+                        <MDBIcon icon='bars' fas style={{ color: "#FFCB05" }} />
                     </MDBNavbarToggler>
                     <MDBCollapse navbar show={showNavNoToggler}>
                         <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
                             <MDBNavbarItem className='active'>
 
-                                <Nav.Link style={{color: "#FFCB05"}} onClick = {() => setShowNavNoToggler(false)} 
-                                as={Link} to={`/`}>&lt;About /&gt;</Nav.Link>
+                                <Nav.Link style={{ color: "#FFCB05" }} onClick={() => setShowNavNoToggler(false)}
+                                    as={Link} to={`/`}>&lt;About /&gt;</Nav.Link>
 
                             </MDBNavbarItem>
                             {/* <MDBNavbarItem>
@@ -80,22 +87,22 @@ export default function Navigation() {
                             </MDBNavbarItem> */}
 
 
-                            
+
 
                             <MDBNavbarItem>
-                                <Nav.Link style={{color: "#FFCB05"}} onClick = {() => setShowNavNoToggler(false)} 
-                                as={Link} to={`/skillsets`}>&lt;Skillsets /&gt;</Nav.Link>
+                                <Nav.Link style={{ color: "#FFCB05" }} onClick={() => setShowNavNoToggler(false)}
+                                    as={Link} to={`/skillsets`}>&lt;Skillsets /&gt;</Nav.Link>
                             </MDBNavbarItem>
 
                             <MDBNavbarItem>
-                                <Nav.Link style={{color: "#FFCB05"}} onClick = {() => setShowNavNoToggler(false)} 
-                                as={Link} to={`/projects`}>&lt;Projects /&gt;</Nav.Link>
+                                <Nav.Link style={{ color: "#FFCB05" }} onClick={() => setShowNavNoToggler(false)}
+                                    as={Link} to={`/projects`}>&lt;Projects /&gt;</Nav.Link>
                             </MDBNavbarItem>
 
 
                             <MDBNavbarItem>
-                                <Nav.Link style={{color: "#FFCB05"}} onClick = {() => setShowNavNoToggler(false)} 
-                                as={Link} to={`/contract`}>&lt;Contract Work /&gt;</Nav.Link>
+                                <Nav.Link style={{ color: "#FFCB05" }} onClick={() => setShowNavNoToggler(false)}
+                                    as={Link} to={`/contract`}>&lt;Contract Work /&gt;</Nav.Link>
                             </MDBNavbarItem>
 
                             {/* <MDBNavbarItem>
@@ -104,8 +111,35 @@ export default function Navigation() {
                             </MDBNavbarItem> */}
 
                         </MDBNavbarNav>
+{!showNavNoToggler &&                       <MDBBtn
+                            onClick={toggleBackgroundAttribute}
+                            outline
+                            style={buttonStyle}
+                            
+                        >
+                            {theme == "light" ?
 
+                                <MDBIcon
+                                    onClick={toggleBackgroundAttribute}
+                                    far
+                                    icon="sun"
+                                    color="light"
+                                    size='1x'
+                                    outline
+                                />
+                                :
 
+                                <MDBIcon
+                                    onClick={toggleBackgroundAttribute}
+                                    far
+                                    icon="moon"
+                                    color="light"
+                                    size='1x'
+                                    outline
+                                />
+
+                            }
+                        </MDBBtn>}
 
 
 

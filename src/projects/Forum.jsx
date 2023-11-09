@@ -12,10 +12,10 @@ import {
 } from 'mdb-react-ui-kit';
 
 
-const Forum = () => {
+const Forum = ({theme}) => {
     return (
       <>
-         <MDBCard style={{height: "600px", maxWidth: "400px",}}>
+         <MDBCard style={{height: "600px", maxWidth: "400px",}} background={theme}>
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='images/forum.png' fluid alt='...' style={{height:"200px"}}/>
         <a>
@@ -24,7 +24,7 @@ const Forum = () => {
       </MDBRipple>
       <MDBCardBody>
         <MDBCardTitle style={{height: "70px"}}><h3 style={{ fontWeight: 'bold' }}>Forum Backend</h3></MDBCardTitle>
-        <MDBCardText>
+        <MDBCardText style={{ maxHeight: '150px', overflowY: 'auto' }}>
           Open source project to create a deployable forum backend for a frontend application.
           Created using Django framework and supports sign in through social accounts such as Google and 
           Facebook. Currently uses sqlite3 as database but can be hosted on Amazon RDS fairly easily.

@@ -12,10 +12,14 @@ import {
 } from 'mdb-react-ui-kit';
 
 
-const Cake = () => {
+const Cake = ({theme}) => {
+
+
+
+  
     return (
       <>
-         <MDBCard style={{height: "600px", maxWidth: "400px",}}>
+         <MDBCard style={{height: "600px", maxWidth: "400px",}}  background={theme}>
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='images/cake.png' fluid alt='...' style={{height:"200px"}}/>
         <a>
@@ -26,8 +30,10 @@ const Cake = () => {
         <MDBCardTitle style={{height: "70px"}}><h3 style={{ fontWeight: 'bold' }}>Cake Boutique Website</h3></MDBCardTitle>
         <MDBCardText style={{ maxHeight: '150px', overflowY: 'auto' }}>
   Contract work involving a full-stack project for a local bakery. The backend was developed
-  using Django framework in Python and deployed to AWS Elastic Beanstalk. The frontend was 
-  deployed to AWS Amplify.
+  using Django framework in Python and deployed to AWS Elastic Beanstalk. The frontend was developed using
+  React js via Vite frontend tooling package and npm package manager. 
+  deployed to AWS Amplify. The domain name was provided by AWS Route 53 service and images were 
+  stored using AWS S3 buckets for scalability. 
 </MDBCardText>
 
 

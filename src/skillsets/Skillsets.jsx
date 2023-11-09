@@ -18,13 +18,19 @@ import {
   MDBListGroupItem
 } from 'mdb-react-ui-kit';
 
-export default function Skillsets() {
+export default function Skillsets({theme}) {
 
   const textStyle = {
     fontFamily: "Font Name, Courier",
 
 
   };
+
+  let textClass = "py-5 text-grey";
+
+  if(theme == "dark"){
+    textClass = "py-5 text-white";
+  }
   
   const programmingLanguages = [
     {
@@ -89,7 +95,9 @@ export default function Skillsets() {
     {
       name: "Flask",
     },
-
+    {
+      name: "PyTorch",
+    },
 
   ];
 
@@ -184,6 +192,16 @@ export default function Skillsets() {
     {
       name: "Amazon RDS",
     },
+    {
+      name: "S3 Buckets",
+    },
+    {
+      name: "Amplify",
+    },
+    {
+      name: "npm",
+    },
+
     {
       name: "MySQL",
     },
@@ -284,10 +302,10 @@ const headingStyle = {
 
   return (
     <>
-      <MDBContainer className="py-5" style = {textStyle}>
+      <MDBContainer className={textClass} style = {textStyle}>
         <MDBRow>
         <MDBCol lg="8">
-          <MDBCard className="mb-5 p-3">
+          <MDBCard className="mb-5 p-3" background= {theme}>
           <h1 style={headingStyle}>
       Languages/Technologies
     </h1>
@@ -315,7 +333,7 @@ const headingStyle = {
                   </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">
-                  <MDBCardText className="text-muted">
+                  <MDBCardText >
                     {extractNamesAsText(programmingLanguages)}
                   </MDBCardText>
                 </MDBCol>
@@ -329,7 +347,7 @@ const headingStyle = {
                   </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">
-                  <MDBCardText className="text-muted">
+                  <MDBCardText className="">
                     {extractNamesAsText(libraries)}
                   </MDBCardText>
                 </MDBCol>
@@ -343,7 +361,7 @@ const headingStyle = {
                   </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">
-                  <MDBCardText className="text-muted">
+                  <MDBCardText className="">
                     {extractNamesAsText(frameworks)}
                   </MDBCardText>
                 </MDBCol>
@@ -356,7 +374,7 @@ const headingStyle = {
                     </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">
-                  <MDBCardText className="text-muted">
+                  <MDBCardText className="">
                     {extractNamesAsText(technologies)}
                   </MDBCardText>
                 </MDBCol>
@@ -370,7 +388,7 @@ const headingStyle = {
                   </MDBCardText>
                 </MDBCol>
                 <MDBCol sm="7">
-                  <MDBCardText className="text-muted">
+                  <MDBCardText className="">
                     {extractNamesAsText(hobbies)}
                   </MDBCardText>
                 </MDBCol>
@@ -383,7 +401,7 @@ const headingStyle = {
           </MDBRow>
         </MDBCol>
         <MDBCol lg="4">
-          <MDBCard className="mb-5 p-3">
+          <MDBCard className="mb-5 p-3" background = {theme}>
             <h1 className="d-flex align-items-center justify-content-center">Coursework</h1>
             <MDBCardBody>
               <MDBRow className="mb-4">

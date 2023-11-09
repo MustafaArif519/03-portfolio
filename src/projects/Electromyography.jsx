@@ -12,10 +12,10 @@ import {
 } from 'mdb-react-ui-kit';
 
 
-const Electromyography = () => {
+const Electromyography = ({theme}) => {
     return (
       <>
-         <MDBCard style={{height: "600px", maxWidth: "400px",}}>
+         <MDBCard style={{height: "600px", maxWidth: "400px",}} background={theme}>
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='images/emg.png' fluid alt='...' style={{height:"200px"}}/>
         <a>
@@ -24,7 +24,7 @@ const Electromyography = () => {
       </MDBRipple>
       <MDBCardBody>
         <MDBCardTitle style={{height: "70px"}}><h3 style={{ fontWeight: 'bold' }}>Electromyography Arduino/Python</h3></MDBCardTitle>
-        <MDBCardText>
+        <MDBCardText style={{ maxHeight: '150px', overflowY: 'auto' }}>
           Open source project to convert electrical signals measured from EMG sensor in patient's residual
           limb and covert to mechanical movement in prosthetic arm. Movements determined by threshold
           values in Arduino and classified via machine learning in Python both with high accuracy.

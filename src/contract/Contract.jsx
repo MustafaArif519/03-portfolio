@@ -20,17 +20,21 @@ import {
   MDBListGroupItem
 } from 'mdb-react-ui-kit';
 
-export default function  Contract () {
+export default function  Contract ({theme}) {
   const textStyle = {
     fontFamily: "Font Name, Courier",
 
 
   };
 
+  let textClass = "py-5 text-grey";
 
+  if(theme == "dark"){
+    textClass = "py-5 text-white";
+  }
   return (
     <>
-    <MDBContainer className="py-5" style = {textStyle}>
+    <MDBContainer className={textClass} style = {textStyle}>
     <h2 style={{height:"100px", textAlign: "center", color:"#FFFFFF"}}>
       <div style = {textStyle} >
         <span >Web solutions that are </span>
@@ -59,7 +63,7 @@ export default function  Contract () {
     />
     </div>
     </h2>
-    <MDBCard alignment='' >
+    <MDBCard alignment='' background={theme}>
       <MDBCardHeader style= {{minHeight:"90px"}}>
       <h3>Unlock the full potential of your project – I'm here to turn your vision 
           into reality as your full stack developer for hire!</h3>
@@ -81,7 +85,7 @@ export default function  Contract () {
 
 
       </MDBCardBody>
-      <MDBCardFooter className='text-muted'>
+      <MDBCardFooter className=''>
 
       <div style={{ display: 'flex', alignItems: 'center' }}>
   <span style={{ marginRight: '10px' }}>See how I made this website here -&gt;</span>

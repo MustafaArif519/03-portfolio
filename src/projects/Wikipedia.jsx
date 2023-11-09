@@ -12,10 +12,10 @@ import {
 } from 'mdb-react-ui-kit';
 
 
-const Wikipedia = () => {
+const Wikipedia = ({theme}) => {
     return (
       <>
-         <MDBCard style={{height: "600px", maxWidth: "400px",}}>
+         <MDBCard style={{height: "600px", maxWidth: "400px",}} background={theme}>
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='images/wikipedia.png' fluid alt='...' style={{height:"200px"}}/>
         <a>
@@ -24,7 +24,7 @@ const Wikipedia = () => {
       </MDBRipple>
       <MDBCardBody>
         <MDBCardTitle style={{height: "70px"}}><h3 style={{ fontWeight: 'bold' }}>Wikipedia Search Pipeline</h3></MDBCardTitle>
-        <MDBCardText>
+        <MDBCardText style={{ maxHeight: '150px', overflowY: 'auto' }}>
           Map-Reduce style Pipeline that calculates tf-idf score for every word per document from 
           a series of real wikipedia articles. Results of pipeline are then used by a REST API
           developed in Django to serve page results based on search query.
