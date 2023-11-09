@@ -22,7 +22,7 @@ import {
   MDBListGroupItem
 } from 'mdb-react-ui-kit';
 
-export default function About({theme}) {
+export default function About({theme, iconColor}) {
   const textStyle = {
     fontFamily: "Font Name, Courier",
 
@@ -128,12 +128,12 @@ export default function About({theme}) {
                     <a href='https://www.linkedin.com/in/mustafa-arif-9a46a0239/'
                       target="_blank" rel="noopener noreferrer"
                       className='me-4 text-reset' >
-                      <MDBIcon fab icon="linkedin" size='3x' style={{ color: '#3b5998' }} />
+                      <MDBIcon fab icon="linkedin" size='3x' style={{ color: iconColor }} />
                     </a>
 
                     <a href="https://github.com/MustafaArif519"
                       className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
-                      <MDBIcon fab icon="github" size='3x' style={{ color: '#3b5998' }} />
+                      <MDBIcon fab icon="github" size='3x' style={{ color: iconColor }} />
                     </a>
 
 

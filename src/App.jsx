@@ -31,6 +31,18 @@ function App() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
+
+  let textClass = "text-center text-lg-start text-grey";
+
+  if(theme == "dark"){
+    textClass = "text-center text-lg-start text-white";
+  }
+
+  let iconColor = "#3b5998";
+  if(theme == "dark"){
+    iconColor = "#daeaed";
+  }
+
   return (
     <>
 
@@ -39,7 +51,7 @@ function App() {
         <Navigation toggleBackgroundAttribute={toggleBackgroundAttribute} theme = {theme}/>
 
         <Routes>
-          <Route path="/" element={<About theme={theme}/>} />
+          <Route path="/" element={<About theme={theme} iconColor={iconColor}/>} />
           <Route path="/contract" element={<Contract theme={theme}/>} />
           <Route path="/skillsets" element={<Skillsets theme={theme}/>} />
 
@@ -48,7 +60,7 @@ function App() {
           <Route path="*" element={<ErrorPage theme={theme}/>} />
         </Routes>
       </Router>
-      <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+      <MDBFooter bgColor={theme} className={textClass} >
         <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
           <div className='me-5 d-none d-lg-block'>
             <span>Feel free to connect with me on my socials:</span>
@@ -58,12 +70,12 @@ function App() {
             <a href='https://www.linkedin.com/in/mustafa-arif-9a46a0239/'
               target="_blank" rel="noopener noreferrer"
               className='me-4 text-reset' >
-              <MDBIcon fab icon="linkedin" size='2x' style={{ color: '#3b5998' }} />
+              <MDBIcon fab icon="linkedin" size='2x' style={{ color: iconColor }} />
             </a>
 
             <a href="https://github.com/MustafaArif519"
               className='me-4 text-reset' target="_blank" rel="noopener noreferrer">
-              <MDBIcon fab icon="github" size='2x' style={{ color: '#3b5998' }} />
+              <MDBIcon fab icon="github" size='2x' style={{ color: iconColor }} />
             </a>
 
 
