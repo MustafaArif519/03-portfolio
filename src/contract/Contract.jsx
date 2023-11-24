@@ -64,13 +64,13 @@ export default function  Contract ({theme}) {
     </div>
     </h2>
     <MDBCard alignment='' background={theme}>
-      <MDBCardHeader style= {{minHeight:"90px"}}>
+      <MDBCardHeader style= {{minHeight:"90px", textAlign: "center",}}>
       <h3>Unlock the full potential of your project – I'm here to turn your vision 
           into reality as your full stack developer for hire!</h3>
       
           
           </MDBCardHeader>
-      <MDBCardBody>
+      <MDBCardBody style= {{ textAlign: "center",}}>
         
         <MDBCardText>
           <h3>
@@ -87,7 +87,7 @@ export default function  Contract ({theme}) {
       </MDBCardBody>
       <MDBCardFooter className=''>
 
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', alignItems: 'center' , textAlign: "center"}}>
   <span style={{ marginRight: '10px' }}>See how I made this website here -&gt;</span>
   <MDBBtn color="secondary" href="https://github.com/MustafaArif519/portfolio/" target="_blank">
     <MDBIcon fab icon="github" size='1x' style={{ color: '#3b5998' }} />
