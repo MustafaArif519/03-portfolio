@@ -218,8 +218,6 @@ console.log(theme);
                 A Short Story
               </h1>
               <MDBCardBody >
-                I repeated Algebra 1, not something you would expect from someone who is
-                offering to tutor for Physics C or Calculus BC in their opening statement. However
                 I am someone who believes in transparency and that my clients should know my full
                 credentials and experiences before hiring me. With that, I make the confession that
                 I am not some prodigy despite maintaining a 4.0 and taking 11 AP classes.

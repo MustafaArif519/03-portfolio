@@ -47,7 +47,7 @@ export default function About({theme, iconColor}) {
 
   const downloadTranscript = () => {
     // Replace 'pdf-sample.pdf' with the actual URL of your PDF file
-    const pdfUrl = 'images/TWM25BHH.pdf';
+    const pdfUrl = 'images/TER8WILM.pdf';
   
     // Create an anchor element
     const anchor = document.createElement('a');
