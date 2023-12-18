@@ -56,7 +56,7 @@ function App() {
           <Route path="/skillsets" element={<Skillsets theme={theme}/>} />
 
           <Route path="/projects" element={<Projects theme={theme}/>} />
-          <Route path="/tutoring" element={<Tutoring theme={theme}/>} />
+          <Route path="/tutoring" element={<Tutoring theme={theme} iconColor={iconColor}/>} />
           <Route path="*" element={<ErrorPage theme={theme}/>} />
         </Routes>
       </Router>
