@@ -31,14 +31,14 @@ export default function About({theme, iconColor}) {
 
   const downloadResume = () => {
   // Replace 'pdf-sample.pdf' with the actual URL of your PDF file
-  const pdfUrl = 'images/Arif_Resume_2023.pdf';
+  const pdfUrl = 'images/Arif_Mustafa_Resume_2023.pdf';
 
   // Create an anchor element
   const anchor = document.createElement('a');
   anchor.href = pdfUrl;
 
   // Set the download attribute with the desired filename
-  anchor.download = 'Arif_Mustafa_Resume.pdf';
+  anchor.download = 'Arif_Mustafa_Resume_2023.pdf';
 
   // Trigger a click event on the anchor to initiate the download
   anchor.click();
