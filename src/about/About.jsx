@@ -175,7 +175,8 @@ export default function About({theme, iconColor}) {
         <MDBCardText>
         My name is Mustafa Arif and I am currently a freelance full stack web developer. I earned my 
 Computer Science degree at the University of Michigan Ann Arbor and graduated in December 2023. As a software engineer
-          I have experience in machine learning algorithms, distributed systems, full-stack web development, and operating systems. 
+          I have experience in machine learning algorithms, distributed systems, 
+          GPU computing, full-stack web development, and operating systems. 
           I am currently engaged in contract work, undertaking diverse web projects that encompass
            everything from crafting sleek frontend portfolio websites to architecting scalable 
            full-stack solutions for businesses. Concurrently, I find immense satisfaction in tutoring 
